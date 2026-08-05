@@ -1,0 +1,2 @@
+Comparison,Method_1_AUC,Method_2_AUC,AUC_Difference,log10_p,p_value,Significant
+SegFormer vs YOLO_referee,0.960145,0.923115,0.03703,-4.198955,6.324766644364345e-05,Yes

@@ -1,0 +1,5 @@
+Group,Images,Failures,Failure_Rate_%,Mean_Agreement_Dice,Std_Agreement_Dice,Mean_Agreement_IoU,Mean_Boundary_Agreement,Mean_Area_Ratio,Mean_Centroid_Distance
+Both Empty,130,130,100.0,0.0,0.0,0.0,0.0,1.0,1.0
+Primary Empty Only,47,47,100.0,0.0,0.0,0.0,0.0,0.0,1.0
+Referee Empty Only,71,12,16.9,0.0,0.0,0.0,0.0,0.0,1.0
+Both Non-Empty,975,47,4.82,0.9459363036144978,0.12755318281723682,0.9146526561644043,0.48123920541673343,0.938353983643849,0.011088970743147202
