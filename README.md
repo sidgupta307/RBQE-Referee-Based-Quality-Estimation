@@ -22,8 +22,8 @@ Download them from their original sources and set the paths at the top of each s
 | Paper item | Result | Script |
 |---|---|---|
 | Table S1 | Independent YOLO Referee training (seed 123) | `scripts/01_train_independent_yolo_referee.py` |
-| Table S1 | Primary YOLOv8n-Seg training (seed 42) | `scripts/primary/train_primary_yolo.py` |
-| Table 2 | Primary-model external segmentation performance | `scripts/primary/evaluate_primary_external.py` |
+| Table S1 | Primary YOLOv8n-Seg training (seed 42) | `scripts/primary/03_train_yolov8_seg.py` |
+| Table 2 | Primary-model external segmentation performance | `scripts/primary/01_external_validation_yolo_segformer.py` |
 | — | External referee predictions | `scripts/02_external_validation_yolo_referee.py`, `scripts/03_generate_external_referee_predictions.py` |
 | Tables 3, S4, S7, S9 | Independent YOLO agreement features and evaluation | `scripts/04_extract_yolo_seed_agreement.py`, `scripts/05_standardized_yolo_referee_evaluation.py` |
 | Table S5 | Independent YOLO bootstrap CI | `scripts/yolo_referee/06_bootstrap_auc.py` |
@@ -39,14 +39,14 @@ Download them from their original sources and set the paths at the top of each s
 | Tables 3, S4–S6 | MedSAM (prompt-coupled) evaluation and bootstrap | `scripts/medsam/` |
 | Tables 3, 5 | Restricted 1,046-image (non-empty primary) analysis | `scripts/restricted/` |
 | Table 5, Fig. 3 | TTA and morphology baselines | `scripts/baselines/` |
-| §5.3, Supp. §11 | Deduplicated sensitivity analysis (CVC-300 / CVC-ColonDB overlap) | `scripts/analysis/dedup_sensitivity.py` |
+| §5.3, Supp. §11 | Deduplicated sensitivity analysis (CVC-300, CVC-ColonDB and ETIS-Larib overlap) | `scripts/analysis/dedup_sensitivity.py` |
 | All | Automated check of every number derivable from the released files | `scripts/analysis/verify_paper_numbers.py` |
 | Figs. S1, S4 | Supplementary figures | `scripts/figures/` |
 
 Quick check with the released per-image files:
 ```bash
 pip install -r requirements.txt
-python scripts/analysis/verify_paper_numbers.py sample_results   # recomputes 60 manuscript values: expect 60 PASS, 0 FAIL
+python scripts/analysis/verify_paper_numbers.py sample_results sample_results/clean_agreement_features.csv   # recomputes 65 manuscript values: expect 65 PASS, 0 FAIL
 python scripts/analysis/paired_delong_and_restricted.py sample_results
 # Full benchmark: SegFormer-B0 0.9601 vs Independent YOLO 0.9231, dAUC = 0.0370, p = 6.32e-05
 # Paired 975-image analysis: 0.88525 vs 0.78257, dAUC = 0.10268, p = 0.00891
