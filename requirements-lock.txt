@@ -1,0 +1,212 @@
+accelerate==1.14.0
+aiofiles==25.1.0
+aiohappyeyeballs==2.7.1
+aiohttp==3.14.3
+aiosignal==1.4.0
+annotated-doc==0.0.4
+annotated-types==0.7.0
+anyio==4.13.0
+arel==0.4.0
+asttokens @ file:///home/conda/feedstock_root/build_artifacts/asttokens_1763409923949/work
+async-asgi-testclient==1.4.11
+async-timeout==5.0.1
+attrs==26.1.0
+beautifulsoup4==4.15.0
+bidict==0.23.1
+bleach==6.4.0
+cacheout==0.14.1
+cachetools==7.2.0
+captum==0.9.0
+certifi==2026.1.4
+chardet==7.6.0
+charset-normalizer==3.4.4
+click==8.3.3
+colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1733218098505/work
+comm @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_comm_1753453984/work
+contourpy==1.3.2
+cssselect==1.5.0
+cssutils==2.15.0
+cycler==0.12.1
+debugpy @ file:///D:/bld/bld/rattler-build_debugpy_1769745019/work
+decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1740384970518/work
+defusedxml==0.7.1
+distinctipy==1.3.4
+encutils==1.0.0
+exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1763918002538/work
+executing @ file:///home/conda/feedstock_root/build_artifacts/executing_1756729339227/work
+fastapi==0.119.1
+fastjsonschema==2.22.2
+ffmpeg-python==0.2.0
+filelock==3.20.0
+fonttools==4.61.1
+frozenlist==1.8.0
+fsspec==2025.12.0
+future==1.0.0
+gdown==6.4.0
+geojson==3.3.0
+gitdb==4.0.12
+GitPython==3.1.62
+giturlparse==0.15.0
+grad-cam==1.5.5
+greenlet==3.5.6
+h11==0.16.0
+h2==4.4.1
+hf-xet==1.5.0
+hpack==4.2.0
+httpcore==1.0.9
+httptools==0.8.0
+httpx==0.28.1
+huggingface_hub==1.14.0
+hyperframe==6.1.0
+idna==3.11
+ImageHash==4.3.2
+ImageIO==2.37.3
+imagesize==1.4.1
+imutils==0.5.4
+inflect==7.5.0
+ipykernel @ file:///D:/bld/bld/rattler-build_ipykernel_1770566174/work
+ipython @ file:///D:/bld/bld/rattler-build_ipython_1748711254/work
+ipywidgets==8.1.9
+jedi @ file:///home/conda/feedstock_root/build_artifacts/jedi_1733300866624/work
+Jinja2==3.1.6
+joblib==1.5.3
+jsonpatch==1.33
+jsonpointer==3.1.1
+jsonschema==4.23.0
+jsonschema-specifications==2025.9.1
+jupyter_client @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_jupyter_client_1767954655/work
+jupyter_core @ file:///D:/bld/bld/rattler-build_jupyter_core_1760643889/work
+jupyterlab_pygments==0.3.0
+jupyterlab_widgets==3.0.17
+kaggle==1.7.4.5
+kiwisolver==1.4.9
+lazy-loader==0.5
+lxml==6.1.3
+markdown-it-py==4.2.0
+MarkupSafe==3.0.2
+matplotlib==3.10.8
+matplotlib-inline @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-inline_1761214490209/work
+mdurl==0.1.2
+MedPy==0.5.2
+memory-profiler==0.61.0
+mistune==3.3.4
+more-itertools==11.1.0
+mpmath==1.3.0
+multidict==6.9.1
+nbclient==0.11.0
+nbconvert==7.17.1
+nbformat==5.11.1
+nest_asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1733325553580/work
+networkx==3.4.2
+numerize==0.12
+numkong==7.7.0
+numpy==2.2.6
+opencv-python==4.13.0.92
+packaging @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_packaging_1769093650/work
+pandas==2.3.3
+pandas-flavor==0.8.1
+pandocfilters==1.5.1
+parso @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_parso_1770676243/work
+patsy==1.0.2
+pickleshare @ file:///home/conda/feedstock_root/build_artifacts/pickleshare_1733327343728/work
+pillow==12.0.0
+pingouin==0.6.1
+platformdirs @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_platformdirs_1771233827/work
+playwright==1.63.0
+polars==1.38.1
+polars-runtime-32==1.38.1
+prompt_toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1756321756983/work
+propcache==0.5.4
+protobuf==7.36.2
+psutil==7.2.2
+PTable==0.9.2
+pure_eval @ file:///home/conda/feedstock_root/build_artifacts/pure_eval_1733569405015/work
+pycocotools==2.0.11
+pydantic==2.13.4
+pydantic_core==2.46.4
+pydicom==2.4.5
+pyee==13.0.1
+Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1750615794071/work
+PyJWT==2.15.0
+Pympler==1.0.1
+pynrrd==0.4.3
+pyparsing==3.3.2
+PySocks==1.7.1
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dateutil_1751104122/work
+python-dotenv==1.0.1
+python-json-logger==3.0.1
+python-magic==0.4.27
+python-multipart==0.0.12
+python-slugify==9.1.1
+pytz==2025.2
+PyWavelets==1.8.0
+pywin32 @ file:///D:/bld/bld/rattler-build_pywin32_1756487147/work
+PyYAML==6.0.3
+pyzmq @ file:///D:/bld/bld/rattler-build_pyzmq_1771606422/work
+quantus==0.6.0
+referencing==0.37.0
+regex==2026.5.9
+requests==2.32.5
+requests-toolbelt==1.0.0
+rich==15.0.0
+rpds-py==0.30.0
+safetensors==0.7.0
+scikit-image==0.25.2
+scikit-learn==1.7.2
+scikit-posthocs==0.17.0
+scipy==1.15.3
+seaborn==0.13.2
+segment_anything @ git+https://github.com/facebookresearch/segment-anything.git@dca509fe793f601edb92606367a655c15ac00fdf
+segmentation_models_pytorch==0.5.0
+sentencepiece==0.2.1
+shapely==2.1.2
+shellingham==1.5.4
+simpleitk==2.5.5
+simsimd==6.5.16
+six @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_six_1753199211/work
+smmap==5.0.3
+sniffio==1.3.1
+soupsieve==2.10
+stack_data @ file:///home/conda/feedstock_root/build_artifacts/stack_data_1733569443808/work
+starlette==0.47.3
+statsmodels==0.14.6
+stringcase==1.2.0
+stringzilla==4.6.1
+sympy==1.14.0
+tabulate==0.10.0
+text-unidecode==1.3
+threadpoolctl==3.6.0
+tifffile==2025.5.10
+timm==1.0.27
+tinycss2==1.5.1
+titlecase==2.4.1
+tokenizers==0.22.2
+torch==2.7.1+cu118
+torchaudio==2.7.1+cu118
+torchvision==0.22.1+cu118
+tornado @ file:///D:/bld/tornado_1765836387919/work
+tqdm==4.67.3
+traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_1733367359838/work
+transformers==5.8.1
+trimesh==4.5.0
+truststore==0.10.4
+ttach==0.0.3
+typeguard==4.6.0
+typer==0.25.1
+typing-inspection==0.4.2
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_typing_extensions_1756220668/work
+tzdata==2025.3
+ultralytics==8.4.14
+ultralytics-thop==2.0.18
+urllib3==2.6.3
+uvicorn==0.53.0
+varname==0.15.1
+watchfiles==1.3.0
+wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1770634525285/work
+webencodings==0.6.1
+websockets==13.1
+widgetsnbextension==4.0.16
+xarray==2025.6.1
+xmltodict==0.13.0
+yarl==1.25.1
+zstd==1.5.7.2

@@ -1,15 +1,16 @@
-numpy>=1.23
-
-pandas>=2.0
-
-scipy>=1.11
-
-matplotlib>=3.8
-
-scikit-learn>=1.4
-
-opencv-python>=4.9
-
-jupyter>=1.0
-
-notebook>=7.0
+# Core analysis
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+pillow
+opencv-python
+tqdm
+# Models
+torch
+torchvision
+ultralytics            # YOLOv8n-Seg (primary model and Independent YOLO Referee)
+transformers           # SegFormer-B0 (Hugging Face, nvidia/mit-b0)
+segmentation-models-pytorch   # UNet++ (ResNet34 encoder)
+# For exact versions, see requirements-lock.txt (generated with `pip freeze` in the experiment environment)
