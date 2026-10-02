@@ -54,6 +54,7 @@ python scripts/analysis/paired_delong_and_restricted.py sample_results
 
 ## Notes
 - Scripts contain absolute Windows paths at the top of each file; edit them to match your local data and output folders.
+- UNet++ referee training: `scripts/unetpp/Unet_plus_plus.ipynb`, cells 3-6 (ResNet34, Adam 1e-4, batch 8, 25 epochs, 256x256; saves `best_unetplusplus_model.pth`). Later cells in that notebook are unrelated experiments.
 - Evaluation is retrospective. Image-level bootstrap and DeLong tests do not model within-sequence correlation between frames.
 
 ## Licence and citation
