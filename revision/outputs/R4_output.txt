@@ -1,0 +1,44 @@
+
+=== clustering: main  (ColonDB blocks 15, ETIS blocks 34)
+Full benchmark                           n=1223 f=236 K= 75 SegFormer-YOLO       0.960-0.923=+0.037 clusterCI[+0.012,+0.065] p_cl=0.0048 p_jk=0.0071 p_img=0.0001
+Full benchmark                           n=1223 f=236 K= 75 SegFormer-Confidence 0.960-0.945=+0.015 clusterCI[-0.016,+0.059] p_cl=0.4294 p_jk=0.4530 p_img=0.1179
+Full benchmark                           n=1223 f=236 K= 75 YOLO     -Confidence 0.923-0.945=-0.022 clusterCI[-0.040,+0.000] p_cl=0.0378 p_jk=0.0435 p_img=0.0191
+Primary non-empty                        n=1046 f= 59 K= 73 SegFormer-YOLO       0.876-0.787=+0.089 clusterCI[-0.009,+0.155] p_cl=0.0287 p_jk=0.0654 p_img=0.0060
+Primary non-empty                        n=1046 f= 59 K= 73 SegFormer-Confidence 0.876-0.779=+0.096 clusterCI[-0.040,+0.199] p_cl=0.1127 p_jk=0.1931 p_img=0.0076
+Primary non-empty                        n=1046 f= 59 K= 73 YOLO     -Confidence 0.787-0.779=+0.008 clusterCI[-0.060,+0.061] p_cl=0.8016 p_jk=0.8276 p_img=0.8254
+Primary and SegFormer-B0 non-empty       n=1031 f= 58 K= 73 SegFormer-YOLO       0.886-0.786=+0.100 clusterCI[-0.003,+0.168] p_cl=0.0167 p_jk=0.0442 p_img=0.0024
+Primary and SegFormer-B0 non-empty       n=1031 f= 58 K= 73 SegFormer-Confidence 0.886-0.781=+0.105 clusterCI[-0.034,+0.207] p_cl=0.0909 p_jk=0.1670 p_img=0.0045
+Primary and SegFormer-B0 non-empty       n=1031 f= 58 K= 73 YOLO     -Confidence 0.786-0.781=+0.005 clusterCI[-0.065,+0.060] p_cl=0.8676 p_jk=0.8854 p_img=0.8835
+Primary and Independent YOLO non-empty   n= 975 f= 47 K= 71 SegFormer-YOLO       0.885-0.783=+0.103 clusterCI[-0.015,+0.186] p_cl=0.0359 p_jk=0.0894 p_img=0.0083
+Primary and Independent YOLO non-empty   n= 975 f= 47 K= 71 SegFormer-Confidence 0.885-0.775=+0.110 clusterCI[-0.060,+0.232] p_cl=0.1437 p_jk=0.2509 p_img=0.0107
+Primary and Independent YOLO non-empty   n= 975 f= 47 K= 71 YOLO     -Confidence 0.783-0.775=+0.007 clusterCI[-0.075,+0.066] p_cl=0.8339 p_jk=0.8629 p_img=0.8619
+Primary and both referees non-empty      n= 964 f= 47 K= 71 SegFormer-YOLO       0.896-0.784=+0.112 clusterCI[-0.008,+0.196] p_cl=0.0235 p_jk=0.0665 p_img=0.0040
+Primary and both referees non-empty      n= 964 f= 47 K= 71 SegFormer-Confidence 0.896-0.779=+0.117 clusterCI[-0.055,+0.239] p_cl=0.1208 p_jk=0.2229 p_img=0.0068
+Primary and both referees non-empty      n= 964 f= 47 K= 71 YOLO     -Confidence 0.784-0.779=+0.005 clusterCI[-0.077,+0.064] p_cl=0.8794 p_jk=0.9004 p_img=0.8997
+
+=== clustering: coarse  (ColonDB blocks 8, ETIS blocks 17)
+Full benchmark                           n=1223 f=236 K= 52 SegFormer-YOLO       0.960-0.923=+0.037 clusterCI[+0.012,+0.065] p_cl=0.0055 p_jk=0.0077 p_img=0.0001
+Full benchmark                           n=1223 f=236 K= 52 SegFormer-Confidence 0.960-0.945=+0.015 clusterCI[-0.016,+0.060] p_cl=0.4379 p_jk=0.4605 p_img=0.1179
+Full benchmark                           n=1223 f=236 K= 52 YOLO     -Confidence 0.923-0.945=-0.022 clusterCI[-0.044,+0.001] p_cl=0.0585 p_jk=0.0661 p_img=0.0191
+Primary non-empty                        n=1046 f= 59 K= 51 SegFormer-YOLO       0.876-0.787=+0.089 clusterCI[-0.003,+0.155] p_cl=0.0225 p_jk=0.0555 p_img=0.0060
+Primary non-empty                        n=1046 f= 59 K= 51 SegFormer-Confidence 0.876-0.779=+0.096 clusterCI[-0.026,+0.193] p_cl=0.1097 p_jk=0.1879 p_img=0.0076
+Primary non-empty                        n=1046 f= 59 K= 51 YOLO     -Confidence 0.787-0.779=+0.008 clusterCI[-0.057,+0.063] p_cl=0.8060 p_jk=0.8303 p_img=0.8254
+Primary and SegFormer-B0 non-empty       n=1031 f= 58 K= 51 SegFormer-YOLO       0.886-0.786=+0.100 clusterCI[+0.005,+0.165] p_cl=0.0123 p_jk=0.0361 p_img=0.0024
+Primary and SegFormer-B0 non-empty       n=1031 f= 58 K= 51 SegFormer-Confidence 0.886-0.781=+0.105 clusterCI[-0.022,+0.204] p_cl=0.0879 p_jk=0.1617 p_img=0.0045
+Primary and SegFormer-B0 non-empty       n=1031 f= 58 K= 51 YOLO     -Confidence 0.786-0.781=+0.005 clusterCI[-0.060,+0.062] p_cl=0.8707 p_jk=0.8873 p_img=0.8835
+Primary and Independent YOLO non-empty   n= 975 f= 47 K= 51 SegFormer-YOLO       0.885-0.783=+0.103 clusterCI[-0.010,+0.184] p_cl=0.0317 p_jk=0.0824 p_img=0.0083
+Primary and Independent YOLO non-empty   n= 975 f= 47 K= 51 SegFormer-Confidence 0.885-0.775=+0.110 clusterCI[-0.056,+0.232] p_cl=0.1421 p_jk=0.2476 p_img=0.0107
+Primary and Independent YOLO non-empty   n= 975 f= 47 K= 51 YOLO     -Confidence 0.783-0.775=+0.007 clusterCI[-0.073,+0.069] p_cl=0.8349 p_jk=0.8632 p_img=0.8619
+Primary and both referees non-empty      n= 964 f= 47 K= 51 SegFormer-YOLO       0.896-0.784=+0.112 clusterCI[-0.002,+0.192] p_cl=0.0200 p_jk=0.0600 p_img=0.0040
+Primary and both referees non-empty      n= 964 f= 47 K= 51 SegFormer-Confidence 0.896-0.779=+0.117 clusterCI[-0.048,+0.239] p_cl=0.1188 p_jk=0.2193 p_img=0.0068
+Primary and both referees non-empty      n= 964 f= 47 K= 51 YOLO     -Confidence 0.784-0.779=+0.005 clusterCI[-0.076,+0.067] p_cl=0.8803 p_jk=0.9007 p_img=0.8997
+
+=== CVC-ClinicDB only (official sequences)
+CVC-ClinicDB                             n= 604 f= 98 K= 29 SegFormer-YOLO       0.969-0.900=+0.069 clusterCI[+0.020,+0.117] p_cl=0.0085 p_jk=0.0201 p_img=0.0001
+CVC-ClinicDB                             n= 604 f= 98 K= 29 SegFormer-Confidence 0.969-0.903=+0.065 clusterCI[-0.005,+0.136] p_cl=0.1154 p_jk=0.1684 p_img=0.0012
+CVC-ClinicDB, primary non-empty          n= 545 f= 39 K= 28 SegFormer-YOLO       0.928-0.773=+0.155 clusterCI[+0.044,+0.227] p_cl=0.0002 p_jk=0.0029 p_img=0.0001
+CVC-ClinicDB, primary non-empty          n= 545 f= 39 K= 28 SegFormer-Confidence 0.928-0.757=+0.170 clusterCI[-0.024,+0.285] p_cl=0.0193 p_jk=0.0892 p_img=0.0002
+
+Non-empty failures: 59 in 20 of 73 clusters; largest cluster holds 14 (C26)
+
+Saved sequence_level_results.csv

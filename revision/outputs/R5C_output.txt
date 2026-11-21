@@ -1,0 +1,35 @@
+Alignment: max |recomputed primary DSC - published| = 2.68e-11
+
+1-2. Referee quality and error dependence
+primary    mean DSC full 0.731 non-empty 0.855
+yolo       mean DSC full 0.723 non-empty 0.811 | empty while primary non-empty  71 (non-failures 59) | shared failures 44/59 (75%) | Spearman rho (non-empty) 0.86
+segformer  mean DSC full 0.751 non-empty 0.803 | empty while primary non-empty  15 (non-failures 14) | shared failures 30/59 (51%) | Spearman rho (non-empty) 0.64
+unetpp     mean DSC full 0.642 non-empty 0.707 | empty while primary non-empty  47 (non-failures 42) | shared failures 27/59 (46%) | Spearman rho (non-empty) 0.47
+unetpp_m   mean DSC full 0.659 non-empty 0.738 | empty while primary non-empty 113 (non-failures 100) | shared failures 26/59 (44%) | Spearman rho (non-empty) 0.63
+
+3. Agreement ROC-AUC [bootstrap 95% CI]
+  full      yolo (published)         0.923 [0.902, 0.942]
+  full      segformer (published)    0.960 [0.947, 0.972]
+  full      yolo (recomputed)        0.926 [0.906, 0.944]
+  full      segformer (recomputed)   0.960 [0.947, 0.972]
+  full      unetpp                   0.938 [0.925, 0.951]
+  full      unetpp_m                 0.926 [0.912, 0.938]
+  non-empty yolo (published)         0.787 [0.723, 0.848]
+  non-empty segformer (published)    0.876 [0.834, 0.914]
+  non-empty yolo (recomputed)        0.797 [0.740, 0.852]
+  non-empty segformer (recomputed)   0.874 [0.833, 0.914]
+  non-empty unetpp                   0.853 [0.819, 0.885]
+  non-empty unetpp_m                 0.865 [0.839, 0.888]
+  all masks non-empty (n=896, failures=42): SegFormer 0.907, YOLO 0.793, UNet++ matched 0.937
+
+4. Paired comparisons
+  full      unetpp_m vs SegFormer 0.926-0.960=-0.034 p_img=0.0000 p_cl=0.0024 p_jk=0.0027 clusterCI[-0.058,-0.010]
+  full      unetpp_m vs YOLO      0.926-0.923=+0.003 p_img=0.7711 p_cl=0.8409 p_jk=0.8454 clusterCI[-0.024,+0.030]
+  full      unetpp   vs YOLO      0.938-0.923=+0.015 p_img=0.1249 p_cl=0.2119 p_jk=0.2292 clusterCI[-0.007,+0.040]
+  full      unetpp   vs SegFormer 0.938-0.960=-0.022 p_img=0.0040 p_cl=0.0530 p_jk=0.0573 clusterCI[-0.044,+0.001]
+  full      unetpp_m vs unetpp    0.926-0.938=-0.012 p_img=0.0840 p_cl=0.2235 p_jk=0.2295 clusterCI[-0.033,+0.007]
+  non-empty unetpp_m vs SegFormer 0.865-0.876=-0.011 p_img=0.5929 p_cl=0.7270 p_jk=0.7492 clusterCI[-0.063,+0.068]
+  non-empty unetpp_m vs YOLO      0.865-0.787=+0.078 p_img=0.0077 p_cl=0.0080 p_jk=0.0172 clusterCI[+0.016,+0.135]
+  non-empty unetpp   vs YOLO      0.853-0.787=+0.066 p_img=0.0518 p_cl=0.0431 p_jk=0.0693 clusterCI[-0.007,+0.126]
+  non-empty unetpp   vs SegFormer 0.853-0.876=-0.023 p_img=0.3566 p_cl=0.5147 p_jk=0.5421 clusterCI[-0.087,+0.059]
+  non-empty unetpp_m vs unetpp    0.865-0.853=+0.012 p_img=0.4975 p_cl=0.5542 p_jk=0.5697 clusterCI[-0.026,+0.057]

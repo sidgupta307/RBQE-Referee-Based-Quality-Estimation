@@ -1,0 +1,22 @@
+
+=== Common non-empty subset (primary and Independent YOLO masks non-empty); pooled over all releases: n = 975, failures = 47
+  CVC-ClinicDB n= 524 failures= 35 clusters=28 (with failures 8) | SegFormer-B0 0.931 Indep. YOLO 0.772 Confidence 0.754
+      SegFormer-B0 vs Indep. YOLO dAUC +0.159  p_img 0.0002  p_cluster 0.0009  p_jk 0.0114  clusterCI [+0.032, +0.243]
+      SegFormer-B0 vs Confidence  dAUC +0.177  p_img 0.0004  p_cluster 0.0357  p_jk 0.1314  clusterCI [-0.048, +0.307]
+  CVC-ColonDB  n= 267 failures=  5 clusters=12 (with failures 2) | SegFormer-B0 0.841 Indep. YOLO 0.896 Confidence 0.934
+      SegFormer-B0 vs Indep. YOLO dAUC -0.055  p_img 0.5699  p_cluster 0.6128  p_jk 0.8835  clusterCI [-0.191, +0.378]
+      SegFormer-B0 vs Confidence  dAUC -0.093  p_img 0.2605  p_cluster 0.2127  p_jk 0.6875  clusterCI [-0.198, +0.196]
+  ETIS-Larib   n= 133 failures=  7 clusters=31 (with failures 5) | SegFormer-B0 0.703 Indep. YOLO 0.832 Confidence 0.799
+      SegFormer-B0 vs Indep. YOLO dAUC -0.129  p_img 0.3243  p_cluster 0.1985  p_jk 0.3350  clusterCI [-0.325, +0.060]
+      SegFormer-B0 vs Confidence  dAUC -0.096  p_img 0.4443  p_cluster 0.3965  p_jk 0.4981  clusterCI [-0.316, +0.183]
+
+=== Non-empty primary mask; pooled over all releases: n = 1046, failures = 59
+  CVC-ClinicDB n= 545 failures= 39 clusters=28 (with failures 9) | SegFormer-B0 0.928 Indep. YOLO 0.773 Confidence 0.757
+      SegFormer-B0 vs Indep. YOLO dAUC +0.155  p_img 0.0001  p_cluster 0.0002  p_jk 0.0029  clusterCI [+0.044, +0.227]
+      SegFormer-B0 vs Confidence  dAUC +0.170  p_img 0.0002  p_cluster 0.0193  p_jk 0.0892  clusterCI [-0.024, +0.285]
+  CVC-ColonDB  n= 298 failures=  6 clusters=12 (with failures 2) | SegFormer-B0 0.790 Indep. YOLO 0.836 Confidence 0.897
+      SegFormer-B0 vs Indep. YOLO dAUC -0.046  p_img 0.6121  p_cluster 0.6381  p_jk 0.9095  clusterCI [-0.168, +0.425]
+      SegFormer-B0 vs Confidence  dAUC -0.106  p_img 0.2253  p_cluster 0.1805  p_jk 0.6946  clusterCI [-0.217, +0.233]
+  ETIS-Larib   n= 147 failures= 14 clusters=33 (with failures 9) | SegFormer-B0 0.768 Indep. YOLO 0.879 Confidence 0.808
+      SegFormer-B0 vs Indep. YOLO dAUC -0.111  p_img 0.1167  p_cluster 0.0693  p_jk 0.1097  clusterCI [-0.232, +0.015]
+      SegFormer-B0 vs Confidence  dAUC -0.039  p_img 0.5923  p_cluster 0.6068  p_jk 0.6366  clusterCI [-0.197, +0.133]

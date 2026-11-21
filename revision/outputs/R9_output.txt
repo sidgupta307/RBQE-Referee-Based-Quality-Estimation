@@ -1,0 +1,12 @@
+=== main clustering: n = 1046, failures = 59, clusters = 73
+  UNet++ matched  vs SegFormer  dAUC -0.011  p_img 0.5929  p_cluster 0.7270  p_jk 0.7492  clusterCI [-0.063, +0.068]
+  UNet++ matched  vs YOLO       dAUC +0.078  p_img 0.0077  p_cluster 0.0080  p_jk 0.0172  clusterCI [+0.016, +0.135]
+  UNet++ matched  vs Confidence dAUC +0.085  p_img 0.0033  p_cluster 0.0484  p_jk 0.1075  clusterCI [+0.002, +0.163]
+  SegFormer       vs YOLO 512   dAUC +0.023  p_img 0.4151  p_cluster 0.3082  p_jk 0.3206  clusterCI [-0.027, +0.071]
+  YOLO 512        vs YOLO       dAUC +0.066  p_img 0.0419  p_cluster 0.0829  p_jk 0.1578  clusterCI [-0.016, +0.128]
+=== coarse clustering: n = 1046, failures = 59, clusters = 51
+  UNet++ matched  vs SegFormer  dAUC -0.011  p_img 0.5929  p_cluster 0.7283
+  UNet++ matched  vs YOLO       dAUC +0.078  p_img 0.0077  p_cluster 0.0127
+  UNet++ matched  vs Confidence dAUC +0.085  p_img 0.0033  p_cluster 0.0567
+  SegFormer       vs YOLO 512   dAUC +0.023  p_img 0.4151  p_cluster 0.2753
+  YOLO 512        vs YOLO       dAUC +0.066  p_img 0.0419  p_cluster 0.0804

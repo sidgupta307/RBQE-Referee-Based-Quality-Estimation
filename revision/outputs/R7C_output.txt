@@ -1,0 +1,85 @@
+A. Per-source results on the standardized benchmark (ROC-AUC)
+  CVC-ClinicDB full      n= 604 failures= 98 mean DSC=0.776 |SegFormer 0.969 YOLO 0.900 Confidence 0.903 Morphology 0.856 TTA 0.824
+  CVC-ClinicDB non-empty n= 545 failures= 39 mean DSC=0.860 |SegFormer 0.928 YOLO 0.773 Confidence 0.757 Morphology 0.638 TTA 0.559
+      SegFormer  vs YOLO       dAUC +0.155  p_img 0.0001  p_cluster 0.0002  p_jk 0.0029  clusterCI [+0.044, +0.227]
+  CVC-ColonDB  full      n= 371 failures= 79 mean DSC=0.692 |SegFormer 0.976 YOLO 0.939 Confidence 0.992 Morphology 0.990 TTA 0.981
+  CVC-ColonDB  non-empty n= 298 failures=  6 mean DSC=0.861 |SegFormer 0.790 YOLO 0.836 Confidence 0.897 Morphology 0.863 TTA 0.753
+      SegFormer  vs YOLO       dAUC -0.046  p_img 0.6121  p_cluster 0.6381  p_jk 0.9095  clusterCI [-0.168, +0.425]
+  ETIS-Larib   full      n= 188 failures= 55 mean DSC=0.635 |SegFormer 0.905 YOLO 0.944 Confidence 0.951 Morphology 0.938 TTA 0.931
+  ETIS-Larib   non-empty n= 147 failures= 14 mean DSC=0.812 |SegFormer 0.768 YOLO 0.879 Confidence 0.808 Morphology 0.758 TTA 0.730
+      SegFormer  vs YOLO       dAUC -0.111  p_img 0.1167  p_cluster 0.0693  p_jk 0.1097  clusterCI [-0.232, +0.015]
+  CVC-300      full      n=  60 failures=  4 mean DSC=0.828 |SegFormer 0.991 YOLO 0.955 Confidence 1.000 Morphology 1.000 TTA 1.000
+  CVC-300      non-empty n=  56 failures=  0 mean DSC=0.888 | too few failures
+
+B. PolypDB external validation
+  main (BKAI + Karolinska): n=1230, failures=175 (14.2%), empty primary=126, mean primary DSC=0.798, clusters=383
+    full (n=1230, failures=175): SegFormer 0.969 [0.957, 0.980]; YOLO 0.944 [0.921, 0.966]; UNet++ 0.964 [0.948, 0.978]; UNet++ matched 0.950 [0.935, 0.963]; Confidence 0.951 [0.930, 0.969]; Morphology 0.912 [0.883, 0.940]
+      SegFormer  vs YOLO       dAUC +0.025  p_img 0.0183  p_cluster 0.1008  p_jk 0.1075  clusterCI [-0.002, +0.055]
+      SegFormer  vs Confidence dAUC +0.019  p_img 0.0288  p_cluster 0.0695  p_jk 0.0734  clusterCI [-0.001, +0.040]
+      SegFormer  vs Morphology dAUC +0.057  p_img 0.0001  p_cluster 0.0003  p_jk 0.0004  clusterCI [+0.028, +0.089]
+      UNet++ matched vs YOLO       dAUC +0.006  p_img 0.5415  p_cluster 0.6355  p_jk 0.6410  clusterCI [-0.017, +0.029]
+    non-empty (n=1104, failures=49): SegFormer 0.910 [0.874, 0.941]; YOLO 0.819 [0.748, 0.886]; UNet++ 0.886 [0.834, 0.930]; UNet++ matched 0.885 [0.842, 0.920]; Confidence 0.823 [0.766, 0.874]; Morphology 0.687 [0.611, 0.760]
+      SegFormer  vs YOLO       dAUC +0.091  p_img 0.0103  p_cluster 0.0650  p_jk 0.0842  clusterCI [-0.006, +0.186]
+      SegFormer  vs Confidence dAUC +0.087  p_img 0.0018  p_cluster 0.0049  p_jk 0.0070  clusterCI [+0.022, +0.148]
+      SegFormer  vs Morphology dAUC +0.224  p_img 0.0000  p_cluster 0.0000  p_jk 0.0000  clusterCI [+0.133, +0.314]
+      UNet++ matched vs YOLO       dAUC +0.065  p_img 0.0227  p_cluster 0.0703  p_jk 0.0868  clusterCI [-0.007, +0.134]
+    non-empty primary failures also failed by referee: {'yolo': '38/49', 'segformer': '26/49', 'unetpp': '27/49', 'unetpp_m': '31/49'}
+    referee mean DSC (non-empty): {'yolo': np.float64(0.881), 'segformer': np.float64(0.844), 'unetpp': np.float64(0.838), 'unetpp_m': np.float64(0.823)}
+  sensitivity (Simula NBI): n=146, failures=97 (66.4%), empty primary=91, mean primary DSC=0.309, clusters=146
+    full (n=146, failures=97): SegFormer 0.996 [0.987, 1.000]; YOLO 0.897 [0.836, 0.953]; UNet++ 0.980 [0.959, 0.995]; UNet++ matched 0.991 [0.978, 1.000]; Confidence 0.980 [0.959, 0.995]; Morphology 0.970 [0.940, 0.994]
+      SegFormer  vs YOLO       dAUC +0.099  p_img 0.0009  p_cluster 0.0009  p_jk 0.0010  clusterCI [+0.042, +0.159]
+      SegFormer  vs Confidence dAUC +0.016  p_img 0.0941  p_cluster 0.0941  p_jk 0.0957  clusterCI [-0.000, +0.037]
+      SegFormer  vs Morphology dAUC +0.026  p_img 0.0397  p_cluster 0.0397  p_jk 0.0405  clusterCI [+0.005, +0.054]
+      UNet++ matched vs YOLO       dAUC +0.094  p_img 0.0016  p_cluster 0.0016  p_jk 0.0019  clusterCI [+0.037, +0.154]
+    non-empty (n=55, failures=6): SegFormer 0.932 [0.795, 1.000]; YOLO 0.731 [0.590, 0.846]; UNet++ 0.684 [0.505, 0.854]; UNet++ matched 0.850 [0.679, 0.992]; Confidence 0.673 [0.496, 0.846]; Morphology 0.510 [0.263, 0.750]
+      SegFormer  vs YOLO       dAUC +0.201  p_img 0.0158  p_cluster 0.0158  p_jk 0.0283  clusterCI [+0.012, +0.375]
+      SegFormer  vs Confidence dAUC +0.259  p_img 0.0259  p_cluster 0.0259  p_jk 0.0513  clusterCI [-0.019, +0.488]
+      SegFormer  vs Morphology dAUC +0.422  p_img 0.0004  p_cluster 0.0004  p_jk 0.0021  clusterCI [+0.184, +0.696]
+      UNet++ matched vs YOLO       dAUC +0.119  p_img 0.1606  p_cluster 0.1606  p_jk 0.1942  clusterCI [-0.064, +0.284]
+    non-empty primary failures also failed by referee: {'yolo': '3/6', 'segformer': '3/6', 'unetpp': '2/6', 'unetpp_m': '4/6'}
+    referee mean DSC (non-empty): {'yolo': np.float64(0.692), 'segformer': np.float64(0.813), 'unetpp': np.float64(0.617), 'unetpp_m': np.float64(0.747)}
+  By imaging modality (main set):
+    WLI  full      n=1030 failures= 82 mean DSC=0.858 | SegFormer 0.949 YOLO 0.900 UNet++ 0.937 UNet++ matched 0.932 Confidence 0.905 Morphology 0.834
+    WLI  non-empty n= 990 failures= 42 mean DSC=0.893 | SegFormer 0.907 YOLO 0.812 UNet++ 0.881 UNet++ matched 0.886 Confidence 0.815 Morphology 0.676
+    BLI  full      n=  70 failures= 31 mean DSC=0.500 | SegFormer 0.984 YOLO 0.958 UNet++ 0.966 UNet++ matched 0.871 Confidence 0.978 Morphology 0.984
+    BLI  non-empty n=  41 failures=  2 mean DSC=0.854 | SegFormer 0.936 YOLO 0.904 UNet++ 0.846 UNet++ matched 0.679 Confidence 0.654 Morphology 0.756
+    FICE full      n=  70 failures= 53 mean DSC=0.233 | SegFormer 0.999 YOLO 0.990 UNet++ 1.000 UNet++ matched 0.970 Confidence 0.999 Morphology 0.989
+    FICE non-empty n=  18 failures=  1 mean DSC=0.905 | too few failures
+    LCI  full      n=  60 failures=  9 mean DSC=0.781 | SegFormer 0.976 YOLO 0.996 UNet++ 0.959 UNet++ matched 0.932 Confidence 0.987 Morphology 0.943
+    LCI  non-empty n=  55 failures=  4 mean DSC=0.852 | SegFormer 0.946 YOLO 0.990 UNet++ 0.907 UNet++ matched 0.922 Confidence 0.971 Morphology 0.873
+  Excluding 114 images flagged as possible near-duplicates:
+    full (n=1116, failures=167): SegFormer 0.969 YOLO 0.950 UNet++ 0.967 UNet++ matched 0.951 Confidence 0.954 Morphology 0.911
+    non-empty (n=995, failures=46): SegFormer 0.907 YOLO 0.837 UNet++ 0.894 UNet++ matched 0.882 Confidence 0.833 Morphology 0.678
+      SegFormer  vs YOLO       dAUC +0.070  p_img 0.0374  p_cluster 0.1233  p_jk 0.1458  clusterCI [-0.017, +0.157]
+      SegFormer  vs Confidence dAUC +0.074  p_img 0.0072  p_cluster 0.0129  p_jk 0.0164  clusterCI [+0.011, +0.132]
+      SegFormer  vs Morphology dAUC +0.229  p_img 0.0000  p_cluster 0.0000  p_jk 0.0000  clusterCI [+0.138, +0.324]
+
+C. Failure detection by tertile of lesion size and imaging condition (standardized benchmark)
+  polyp area fraction
+    full      low  [0.001062, 0.02943] n=408 failures=111 | SegFormer 0.930 YOLO 0.923 Confidence 0.970 Morphology 0.970  | sources: cvc_colondb 45%, cvc_clinicdb 28%, etis_larib 26%
+    full      mid  [0.02944, 0.07697] n=407 failures=57 | SegFormer 0.979 YOLO 0.902 Confidence 0.899 Morphology 0.864  | sources: cvc_clinicdb 54%, cvc_colondb 36%, etis_larib 10%
+    full      high [0.07717, 0.6315] n=408 failures=68 | SegFormer 0.967 YOLO 0.930 Confidence 0.952 Morphology 0.933  | sources: cvc_clinicdb 66%, cvc_colondb 25%, etis_larib 10%
+    non-empty low  [0.001339, 0.0326] n=349 failures=24 | SegFormer 0.803 YOLO 0.820 Confidence 0.857 Morphology 0.851  | sources: cvc_colondb 46%, cvc_clinicdb 31%, etis_larib 22%
+    non-empty mid  [0.03278, 0.07746] n=348 failures=24 | SegFormer 0.959 YOLO 0.805 Confidence 0.773 Morphology 0.684  | sources: cvc_clinicdb 57%, cvc_colondb 34%, etis_larib 9%
+    non-empty high [0.07794, 0.5229] n=349 failures=11 | SegFormer 0.794 YOLO 0.703 Confidence 0.702 Morphology 0.583  | sources: cvc_clinicdb 68%, cvc_colondb 21%, etis_larib 10%
+  sharpness
+    full      low  [23.13, 67.28] n=409 failures=79 | SegFormer 0.977 YOLO 0.903 Confidence 0.923 Morphology 0.861  | sources: cvc_clinicdb 60%, cvc_colondb 31%, etis_larib 10%
+    full      mid  [67.31, 95.48] n=406 failures=73 | SegFormer 0.967 YOLO 0.933 Confidence 0.952 Morphology 0.963  | sources: cvc_clinicdb 42%, cvc_colondb 40%, etis_larib 18%
+    full      high [95.59, 430.5] n=408 failures=84 | SegFormer 0.937 YOLO 0.932 Confidence 0.962 Morphology 0.967  | sources: cvc_clinicdb 47%, cvc_colondb 36%, etis_larib 18%
+    non-empty low  [23.13, 67.11] n=349 failures=23 | SegFormer 0.943 YOLO 0.733 Confidence 0.738 Morphology 0.539  | sources: cvc_clinicdb 60%, cvc_colondb 31%, etis_larib 9%
+    non-empty mid  [67.22, 94.91] n=348 failures=19 | SegFormer 0.908 YOLO 0.832 Confidence 0.815 Morphology 0.829  | sources: cvc_clinicdb 46%, cvc_colondb 38%, etis_larib 16%
+    non-empty high [95.05, 312] n=349 failures=17 | SegFormer 0.743 YOLO 0.802 Confidence 0.812 Morphology 0.837  | sources: cvc_clinicdb 50%, cvc_colondb 33%, etis_larib 17%
+  brightness
+    full      low  [46.89, 101.5] n=408 failures=83 | SegFormer 0.969 YOLO 0.916 Confidence 0.962 Morphology 0.957  | sources: cvc_clinicdb 73%, cvc_colondb 26%, etis_larib 1%
+    full      mid  [101.6, 121.4] n=407 failures=69 | SegFormer 0.959 YOLO 0.899 Confidence 0.909 Morphology 0.849  | sources: cvc_clinicdb 49%, cvc_colondb 45%, etis_larib 6%
+    full      high [121.4, 200.2] n=408 failures=84 | SegFormer 0.952 YOLO 0.948 Confidence 0.962 Morphology 0.965  | sources: etis_larib 39%, cvc_colondb 35%, cvc_clinicdb 26%
+    non-empty low  [53.65, 101.9] n=349 failures=15 | SegFormer 0.852 YOLO 0.745 Confidence 0.736 Morphology 0.696  | sources: cvc_clinicdb 76%, cvc_colondb 22%, etis_larib 2%
+    non-empty mid  [102, 120.8] n=348 failures=22 | SegFormer 0.889 YOLO 0.736 Confidence 0.748 Morphology 0.574  | sources: cvc_clinicdb 51%, cvc_colondb 44%, etis_larib 5%
+    non-empty high [121, 200.2] n=349 failures=22 | SegFormer 0.877 YOLO 0.868 Confidence 0.853 Morphology 0.865  | sources: etis_larib 36%, cvc_colondb 35%, cvc_clinicdb 30%
+  specular fraction
+    full      low  [0, 0.0008797] n=408 failures=83 | SegFormer 0.954 YOLO 0.870 Confidence 0.903 Morphology 0.859  | sources: cvc_clinicdb 71%, cvc_colondb 27%, etis_larib 3%
+    full      mid  [0.0008815, 0.004701] n=407 failures=72 | SegFormer 0.973 YOLO 0.947 Confidence 0.967 Morphology 0.971  | sources: cvc_clinicdb 45%, cvc_colondb 43%, etis_larib 11%
+    full      high [0.004702, 0.1526] n=408 failures=81 | SegFormer 0.956 YOLO 0.958 Confidence 0.967 Morphology 0.963  | sources: cvc_colondb 36%, cvc_clinicdb 32%, etis_larib 32%
+    non-empty low  [0, 0.0008771] n=349 failures=25 | SegFormer 0.865 YOLO 0.676 Confidence 0.679 Morphology 0.534  | sources: cvc_clinicdb 73%, cvc_colondb 24%, etis_larib 2%
+    non-empty mid  [0.0008797, 0.004652] n=348 failures=14 | SegFormer 0.902 YOLO 0.823 Confidence 0.832 Morphology 0.849  | sources: cvc_clinicdb 49%, cvc_colondb 41%, etis_larib 10%
+    non-empty high [0.004669, 0.1526] n=349 failures=20 | SegFormer 0.872 YOLO 0.907 Confidence 0.865 Morphology 0.851  | sources: cvc_colondb 36%, cvc_clinicdb 34%, etis_larib 30%

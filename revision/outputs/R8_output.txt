@@ -1,0 +1,57 @@
+1. SegFormer-B0 agreement: thresholds chosen on the benchmark, applied unchanged to PolypDB
+   Without screening, failure rate = 19.3% (benchmark), 14.2% (PolypDB)
+  90% sensitivity (threshold 0.519)
+    Benchmark referred 23.9% ( 292) | sensitivity 0.903 (213/236) | specificity 0.920 | PPV 0.729 | failure rate among accepted 2.47% (23/931) | correct masks referred 79
+    PolypDB   referred 17.3% ( 213) | sensitivity 0.897 (157/175) | specificity 0.947 | PPV 0.737 | failure rate among accepted 1.77% (18/1017) | correct masks referred 56
+  95% sensitivity (threshold 0.809)
+    Benchmark referred 37.0% ( 452) | sensitivity 0.953 (225/236) | specificity 0.770 | PPV 0.498 | failure rate among accepted 1.43% (11/771) | correct masks referred 227
+    PolypDB   referred 31.1% ( 382) | sensitivity 0.960 (168/175) | specificity 0.797 | PPV 0.440 | failure rate among accepted 0.83% (7/848) | correct masks referred 214
+  20% review budget (threshold 0.361)
+    Benchmark referred 20.0% ( 245) | sensitivity 0.847 (200/236) | specificity 0.954 | PPV 0.816 | failure rate among accepted 3.68% (36/978) | correct masks referred 45
+    PolypDB   referred 15.0% ( 185) | sensitivity 0.846 (148/175) | specificity 0.965 | PPV 0.800 | failure rate among accepted 2.58% (27/1045) | correct masks referred 37
+  30% review budget (threshold 0.718)
+    Benchmark referred 30.0% ( 367) | sensitivity 0.928 (219/236) | specificity 0.850 | PPV 0.597 | failure rate among accepted 1.99% (17/856) | correct masks referred 148
+    PolypDB   referred 23.8% ( 293) | sensitivity 0.931 (163/175) | specificity 0.877 | PPV 0.556 | failure rate among accepted 1.28% (12/937) | correct masks referred 130
+  Youden (threshold 0.495)
+    Benchmark referred 22.6% ( 277) | sensitivity 0.894 (211/236) | specificity 0.933 | PPV 0.762 | failure rate among accepted 2.64% (25/946) | correct masks referred 66
+    PolypDB   referred 17.0% ( 209) | sensitivity 0.891 (156/175) | specificity 0.950 | PPV 0.746 | failure rate among accepted 1.86% (19/1021) | correct masks referred 53
+
+2. Same sensitivity targets for each signal (threshold chosen on the benchmark)
+  90% SegFormer-B0       threshold 0.519 Benchmark referred 23.9% ( 292) | sensitivity 0.903 (213/236) | specificity 0.920 | PPV 0.729 | failure rate among accepted 2.47% (23/931) | correct masks referred 79
+  90% SegFormer-B0       threshold 0.519 PolypDB   referred 17.3% ( 213) | sensitivity 0.897 (157/175) | specificity 0.947 | PPV 0.737 | failure rate among accepted 1.77% (18/1017) | correct masks referred 56
+  90% Independent YOLO   threshold 0.945 Benchmark referred 33.8% ( 413) | sensitivity 0.903 (213/236) | specificity 0.797 | PPV 0.516 | failure rate among accepted 2.84% (23/810) | correct masks referred 200
+  90% Independent YOLO   threshold 0.945 PolypDB   referred 27.0% ( 332) | sensitivity 0.903 (158/175) | specificity 0.835 | PPV 0.476 | failure rate among accepted 1.89% (17/898) | correct masks referred 174
+  90% Primary confidence threshold 0.681 Benchmark referred 33.9% ( 415) | sensitivity 0.903 (213/236) | specificity 0.795 | PPV 0.513 | failure rate among accepted 2.85% (23/808) | correct masks referred 202
+  90% Primary confidence threshold 0.681 PolypDB   referred 19.8% ( 243) | sensitivity 0.846 (148/175) | specificity 0.910 | PPV 0.609 | failure rate among accepted 2.74% (27/987) | correct masks referred 95
+  95% SegFormer-B0       threshold 0.809 Benchmark referred 37.0% ( 452) | sensitivity 0.953 (225/236) | specificity 0.770 | PPV 0.498 | failure rate among accepted 1.43% (11/771) | correct masks referred 227
+  95% SegFormer-B0       threshold 0.809 PolypDB   referred 31.1% ( 382) | sensitivity 0.960 (168/175) | specificity 0.797 | PPV 0.440 | failure rate among accepted 0.83% (7/848) | correct masks referred 214
+  95% Independent YOLO   threshold 0.971 Benchmark referred 48.3% ( 591) | sensitivity 0.953 (225/236) | specificity 0.629 | PPV 0.381 | failure rate among accepted 1.74% (11/632) | correct masks referred 366
+  95% Independent YOLO   threshold 0.971 PolypDB   referred 41.4% ( 509) | sensitivity 0.943 (165/175) | specificity 0.674 | PPV 0.324 | failure rate among accepted 1.39% (10/721) | correct masks referred 344
+  95% Primary confidence threshold 0.845 Benchmark referred 51.7% ( 632) | sensitivity 0.953 (225/236) | specificity 0.588 | PPV 0.356 | failure rate among accepted 1.86% (11/591) | correct masks referred 407
+  95% Primary confidence threshold 0.845 PolypDB   referred 33.3% ( 410) | sensitivity 0.926 (162/175) | specificity 0.765 | PPV 0.395 | failure rate among accepted 1.59% (13/820) | correct masks referred 248
+
+3. Four-tier workflow (review threshold = 90%-sensitivity threshold 0.519; high agreement > 0.9)
+  Benchmark (n = 1223, failures = 236)
+    Tier 1 empty primary mask (automatic referral)     images  177 (14.5%)  failures 177 (100.0% of tier)
+    Tier 2 agreement <= threshold (expert review)      images  115 ( 9.4%)  failures  36 (31.3% of tier)
+    Tier 3 threshold < agreement <= 0.9 (accept)       images  381 (31.2%)  failures  21 (5.5% of tier)
+    Tier 4 agreement > 0.9 (accept, high agreement)    images  550 (45.0%)  failures   2 (0.4% of tier)
+  PolypDB (n = 1230, failures = 175)
+    Tier 1 empty primary mask (automatic referral)     images  126 (10.2%)  failures 126 (100.0% of tier)
+    Tier 2 agreement <= threshold (expert review)      images   87 ( 7.1%)  failures  31 (35.6% of tier)
+    Tier 3 threshold < agreement <= 0.9 (accept)       images  358 (29.1%)  failures  16 (4.5% of tier)
+    Tier 4 agreement > 0.9 (accept, high agreement)    images  659 (53.6%)  failures   2 (0.3% of tier)
+
+4. Accepted failures at the 90%-sensitivity threshold (high-agreement failures)
+  Benchmark accepted failures 23: DSC median 0.28, range 0.00-0.49; DSC < 0.1: 6 (of which primary confidence < 0.40: 4)
+  PolypDB   accepted failures 18: DSC median 0.29, range 0.00-0.46; DSC < 0.1: 4 (of which primary confidence < 0.40: 0)
+
+5. Exploratory add-on: also refer detections with primary confidence below c
+  c = 0.30 Benchmark referred 23.9% -> 25.3% (+17); sensitivity 0.903 -> 0.915 (+3); failure rate among accepted 2.47% -> 2.19%
+  c = 0.30 PolypDB   referred 17.3% -> 17.6% (+3); sensitivity 0.897 -> 0.903 (+1); failure rate among accepted 1.77% -> 1.68%
+  c = 0.35 Benchmark referred 23.9% -> 26.7% (+35); sensitivity 0.903 -> 0.924 (+5); failure rate among accepted 2.47% -> 2.01%
+  c = 0.35 PolypDB   referred 17.3% -> 17.9% (+7); sensitivity 0.897 -> 0.909 (+2); failure rate among accepted 1.77% -> 1.58%
+  c = 0.40 Benchmark referred 23.9% -> 27.8% (+48); sensitivity 0.903 -> 0.932 (+7); failure rate among accepted 2.47% -> 1.81%
+  c = 0.40 PolypDB   referred 17.3% -> 18.5% (+14); sensitivity 0.897 -> 0.920 (+4); failure rate among accepted 1.77% -> 1.40%
+  c = 0.50 Benchmark referred 23.9% -> 30.3% (+79); sensitivity 0.903 -> 0.945 (+10); failure rate among accepted 2.47% -> 1.53%
+  c = 0.50 PolypDB   referred 17.3% -> 19.7% (+29); sensitivity 0.897 -> 0.920 (+4); failure rate among accepted 1.77% -> 1.42%

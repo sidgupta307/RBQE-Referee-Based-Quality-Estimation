@@ -1,0 +1,29 @@
+Alignment: max |morphology-file DSC - published DSC| = 2.0e-28
+
+=== Full benchmark: n = 1223, failures = 236, clusters = 75
+  RBQE SegFormer-B0          ROC-AUC 0.960 [0.947, 0.972]
+  RBQE Independent YOLO      ROC-AUC 0.923 [0.902, 0.942]
+  Morphology (Circularity)   ROC-AUC 0.927 [0.900, 0.951]
+  TTA (zero predictions)     ROC-AUC 0.905 [0.878, 0.929]
+  Primary-model confidence   ROC-AUC 0.945 [0.926, 0.962]
+  RBQE SegFormer-B0 vs Morphology (Circularity)        dAUC +0.033 [+0.009, +0.058] p_img 8.84e-03 (Holm 2.65e-02) | seq: CI [-0.016, +0.118] p_cl 0.3827 p_jk 0.4125
+  RBQE SegFormer-B0 vs TTA (zero predictions)          dAUC +0.055 [+0.032, +0.079] p_img 1.33e-05 (Holm 5.33e-05) | seq: CI [+0.011, +0.106] p_cl 0.0219 p_jk 0.0287
+  RBQE Independent YOLO vs Morphology (Circularity)    dAUC -0.004 [-0.026, +0.019] p_img 7.18e-01 (Holm 7.18e-01) | seq: CI [-0.044, +0.058] p_cl 0.8818 p_jk 0.8885
+  RBQE Independent YOLO vs TTA (zero predictions)      dAUC +0.018 [-0.005, +0.041] p_img 1.31e-01 (Holm 2.62e-01) | seq: CI [-0.012, +0.048] p_cl 0.2699 p_jk 0.2846
+  Primary-model confidence vs Morphology (Circularity) dAUC +0.017 [+0.001, +0.036] p_img 4.75e-02 (Holm nan) | seq: CI [-0.015, +0.063] p_cl 0.4024 p_jk 0.4311
+  Primary-model confidence vs TTA (zero predictions)   dAUC +0.039 [+0.023, +0.057] p_img 1.03e-05 (Holm nan) | seq: CI [+0.019, +0.061] p_cl 0.0003 p_jk 0.0005
+
+=== Primary non-empty: n = 1046, failures = 59, clusters = 73
+  RBQE SegFormer-B0          ROC-AUC 0.876 [0.834, 0.914]
+  RBQE Independent YOLO      ROC-AUC 0.787 [0.723, 0.848]
+  Morphology (Circularity)   ROC-AUC 0.709 [0.627, 0.784]
+  TTA (zero predictions)     ROC-AUC 0.621 [0.562, 0.687]
+  Primary-model confidence   ROC-AUC 0.779 [0.722, 0.835]
+  RBQE SegFormer-B0 vs Morphology (Circularity)        dAUC +0.166 [+0.078, +0.257] p_img 2.10e-04 (Holm 4.20e-04) | seq: CI [-0.031, +0.375] p_cl 0.1781 p_jk 0.2908
+  RBQE SegFormer-B0 vs TTA (zero predictions)          dAUC +0.254 [+0.176, +0.329] p_img 1.01e-10 (Holm 4.03e-10) | seq: CI [+0.131, +0.341] p_cl 0.0000 p_jk 0.0000
+  RBQE Independent YOLO vs Morphology (Circularity)    dAUC +0.077 [-0.005, +0.165] p_img 6.58e-02 (Holm 6.58e-02) | seq: CI [-0.085, +0.248] p_cl 0.4147 p_jk 0.5183
+  RBQE Independent YOLO vs TTA (zero predictions)      dAUC +0.165 [+0.085, +0.242] p_img 2.37e-05 (Holm 7.11e-05) | seq: CI [+0.108, +0.232] p_cl 0.0000 p_jk 0.0000
+  Primary-model confidence vs Morphology (Circularity) dAUC +0.070 [+0.003, +0.139] p_img 4.21e-02 (Holm nan) | seq: CI [-0.070, +0.200] p_cl 0.3481 p_jk 0.4549
+  Primary-model confidence vs TTA (zero predictions)   dAUC +0.158 [+0.092, +0.217] p_img 3.83e-07 (Holm nan) | seq: CI [+0.088, +0.259] p_cl 0.0001 p_jk 0.0005
+
+Saved baseline_paired_tests.csv

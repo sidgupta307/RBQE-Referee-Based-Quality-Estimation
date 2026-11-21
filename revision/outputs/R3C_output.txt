@@ -1,0 +1,78 @@
+A. Full 1,248-image set. Excluded from the standardized benchmark: 25 images; all with empty primary mask: True; failures among them: 25
+  n = 1248, failures = 261
+  SegFormer-B0       0.963 [0.951, 0.974]
+  Indep. YOLO (640)  0.927 [0.909, 0.945]
+  Indep. YOLO (512)  0.956 [0.941, 0.971]
+  UNet++             0.941 [0.927, 0.953]
+  UNet++ matched     0.928 [0.915, 0.940]
+  MedSAM             0.876 [0.842, 0.909]
+  Confidence         0.950 [0.933, 0.967]
+  Morphology         0.934 [0.911, 0.956]
+  TTA                0.914 [0.892, 0.936]
+  Empty-mask rule    0.887 [0.862, 0.911]
+    SegFormer-B0 vs Indep. YOLO (640): dAUC +0.035  p_img 3.53e-05
+    SegFormer-B0 vs Indep. YOLO (512): dAUC +0.006  p_img 3.77e-01
+    SegFormer-B0 vs UNet++: dAUC +0.022  p_img 2.19e-03
+    SegFormer-B0 vs Confidence: dAUC +0.013  p_img 1.54e-01
+    SegFormer-B0 vs Morphology: dAUC +0.029  p_img 1.23e-02
+    SegFormer-B0 vs TTA: dAUC +0.048  p_img 2.50e-05
+
+B. Independent YOLO Referee trained at 512 x 512 (benchmark)
+  full (1,223): SegFormer-B0 0.960 [0.947, 0.972]; Indep. YOLO (640) 0.923 [0.902, 0.942]; Indep. YOLO (512) 0.953 [0.937, 0.968]; UNet++ matched 0.926 [0.912, 0.938]; MedSAM 0.863 [0.825, 0.898]; Confidence 0.945 [0.926, 0.962]
+    Indep. YOLO (512) vs Indep. YOLO (640): dAUC +0.030  p_img 0.0010  p_cluster 0.0080  p_jk 0.0115  clusterCI [+0.010, +0.053]
+    SegFormer-B0 vs Indep. YOLO (512): dAUC +0.007  p_img 0.3781  p_cluster 0.3173  p_jk 0.3224  clusterCI [-0.007, +0.020]
+    UNet++ matched vs Indep. YOLO (512): dAUC -0.027  p_img 0.0021  p_cluster 0.0160  p_jk 0.0172  clusterCI [-0.051, -0.005]
+  non-empty (1,046): SegFormer-B0 0.876 [0.834, 0.914]; Indep. YOLO (640) 0.787 [0.723, 0.848]; Indep. YOLO (512) 0.853 [0.797, 0.902]; UNet++ matched 0.865 [0.839, 0.888]; MedSAM 0.452 [0.361, 0.547]; Confidence 0.779 [0.722, 0.835]
+    Indep. YOLO (512) vs Indep. YOLO (640): dAUC +0.066  p_img 0.0419  p_cluster 0.0829  p_jk 0.1578  clusterCI [-0.016, +0.128]
+    SegFormer-B0 vs Indep. YOLO (512): dAUC +0.023  p_img 0.4151  p_cluster 0.3082  p_jk 0.3206  clusterCI [-0.027, +0.071]
+    UNet++ matched vs Indep. YOLO (512): dAUC +0.012  p_img 0.6717  p_cluster 0.6837  p_jk 0.7140  clusterCI [-0.042, +0.083]
+  Indep. YOLO (640)  shared failures 44/59  referee mean DSC (non-empty) 0.811  Spearman rho with primary DSC 0.86
+  Indep. YOLO (512)  shared failures 37/59  referee mean DSC (non-empty) 0.834  Spearman rho with primary DSC 0.82
+  SegFormer-B0       shared failures 30/59  referee mean DSC (non-empty) 0.803  Spearman rho with primary DSC 0.64
+  UNet++ matched     shared failures 26/59  referee mean DSC (non-empty) 0.738  Spearman rho with primary DSC 0.63
+  PolypDB main set
+  full (1,230): SegFormer-B0 0.969 [0.957, 0.980]; Indep. YOLO (640) 0.944 [0.921, 0.966]; Indep. YOLO (512) 0.954 [0.935, 0.970]; UNet++ matched 0.950 [0.935, 0.963]; Confidence 0.951 [0.930, 0.969]
+    SegFormer-B0 vs Indep. YOLO (512): dAUC +0.016  p_img 0.0564  p_cluster 0.0738  p_jk 0.0770  clusterCI [-0.001, +0.033]
+    Indep. YOLO (512) vs Indep. YOLO (640): dAUC +0.009  p_img 0.2444  p_cluster 0.3618  p_jk 0.3711  clusterCI [-0.009, +0.030]
+    UNet++ matched vs Indep. YOLO (512): dAUC -0.004  p_img 0.5939  p_cluster 0.6171  p_jk 0.6195  clusterCI [-0.018, +0.012]
+  non-empty (1,104): SegFormer-B0 0.910 [0.874, 0.941]; Indep. YOLO (640) 0.819 [0.748, 0.886]; Indep. YOLO (512) 0.851 [0.793, 0.901]; UNet++ matched 0.885 [0.842, 0.920]; Confidence 0.823 [0.766, 0.874]
+    SegFormer-B0 vs Indep. YOLO (512): dAUC +0.059  p_img 0.0286  p_cluster 0.0299  p_jk 0.0362  clusterCI [+0.002, +0.113]
+    Indep. YOLO (512) vs Indep. YOLO (640): dAUC +0.031  p_img 0.2593  p_cluster 0.3688  p_jk 0.4018  clusterCI [-0.034, +0.098]
+    UNet++ matched vs Indep. YOLO (512): dAUC +0.034  p_img 0.1212  p_cluster 0.1422  p_jk 0.1554  clusterCI [-0.011, +0.082]
+  Indep. YOLO (640)  shared failures 38/49  referee mean DSC 0.881
+  Indep. YOLO (512)  shared failures 36/49  referee mean DSC 0.877
+  SegFormer-B0       shared failures 26/49  referee mean DSC 0.844
+  UNet++ matched     shared failures 31/49  referee mean DSC 0.823
+
+C. High-agreement failures (Agreement Dice > t), benchmark (236 failures; 59 with non-empty primary mask)
+  SegFormer-B0       | >0.7: accepted 70.6%, failures accepted 17 (7.2% of all, 28.8% of non-empty), failure rate among accepted 1.97% | >0.8: accepted 64.0%, failures accepted 15 (6.4% of all, 25.4% of non-empty), failure rate among accepted 1.92% | >0.9: accepted 45.0%, failures accepted  2 (0.8% of all, 3.4% of non-empty), failure rate among accepted 0.36%
+  Indep. YOLO (640)  | >0.7: accepted 76.9%, failures accepted 33 (14.0% of all, 55.9% of non-empty), failure rate among accepted 3.51% | >0.8: accepted 75.6%, failures accepted 28 (11.9% of all, 47.5% of non-empty), failure rate among accepted 3.03% | >0.9: accepted 72.9%, failures accepted 28 (11.9% of all, 47.5% of non-empty), failure rate among accepted 3.14%
+  Indep. YOLO (512)  | >0.7: accepted 78.3%, failures accepted 24 (10.2% of all, 40.7% of non-empty), failure rate among accepted 2.51% | >0.8: accepted 76.9%, failures accepted 22 (9.3% of all, 37.3% of non-empty), failure rate among accepted 2.34% | >0.9: accepted 70.4%, failures accepted 20 (8.5% of all, 33.9% of non-empty), failure rate among accepted 2.32%
+  UNet++             | >0.7: accepted 57.5%, failures accepted  4 (1.7% of all, 6.8% of non-empty), failure rate among accepted 0.57% | >0.8: accepted 48.4%, failures accepted  3 (1.3% of all, 5.1% of non-empty), failure rate among accepted 0.51% | >0.9: accepted 32.1%, failures accepted  0 (0.0% of all, 0.0% of non-empty), failure rate among accepted 0.00%
+  UNet++ matched     | >0.7: accepted 64.4%, failures accepted  5 (2.1% of all, 8.5% of non-empty), failure rate among accepted 0.63% | >0.8: accepted 59.8%, failures accepted  3 (1.3% of all, 5.1% of non-empty), failure rate among accepted 0.41% | >0.9: accepted 47.8%, failures accepted  0 (0.0% of all, 0.0% of non-empty), failure rate among accepted 0.00%
+  MedSAM             | >0.7: accepted  0.0%, failures accepted  0 (0.0% of all, 0.0% of non-empty), failure rate among accepted 0.00% | >0.8: accepted  0.0%, failures accepted  0 (0.0% of all, 0.0% of non-empty), failure rate among accepted 0.00% | >0.9: accepted  0.0%, failures accepted  0 (0.0% of all, 0.0% of non-empty), failure rate among accepted 0.00%
+  PolypDB main set (175 failures; 49 with non-empty primary mask), Agreement Dice > 0.8
+  SegFormer-B0       accepted 69.7%, failures accepted 7 (4.0% of all, 14.3% of non-empty), failure rate among accepted 0.82%
+  Indep. YOLO (640)  accepted 84.2%, failures accepted 24 (13.7% of all, 49.0% of non-empty), failure rate among accepted 2.32%
+  Indep. YOLO (512)  accepted 83.5%, failures accepted 27 (15.4% of all, 55.1% of non-empty), failure rate among accepted 2.63%
+  UNet++             accepted 65.4%, failures accepted 7 (4.0% of all, 14.3% of non-empty), failure rate among accepted 0.87%
+  UNet++ matched     accepted 70.2%, failures accepted 10 (5.7% of all, 20.4% of non-empty), failure rate among accepted 1.16%
+  Equal failure sensitivity (90%, threshold chosen per referee on the benchmark)
+  SegFormer-B0       threshold 0.519  referred 23.9%  correct masks referred 79
+  Indep. YOLO (640)  threshold 0.945  referred 33.8%  correct masks referred 200
+  Indep. YOLO (512)  threshold 0.748  referred 22.5%  correct masks referred 61
+  UNet++             threshold 0.382  referred 29.0%  correct masks referred 142
+  UNet++ matched     threshold 0.416  referred 29.1%  correct masks referred 143
+  MedSAM             threshold 0.228  referred 79.6%  correct masks referred 761
+
+D. Empty-mask rule on the 1,046 non-empty images: ROC-AUC 0.500 (SegFormer-B0 0.876; confidence 0.779)
+
+E. Common subset (primary, SegFormer-B0 and Independent YOLO masks non-empty): n = 964, failures = 47
+  SegFormer-B0 0.896 [0.845, 0.937]; Indep. YOLO (640) 0.784 [0.710, 0.853]; Indep. YOLO (512) 0.860 [0.797, 0.915]; UNet++ 0.879 [0.843, 0.911]; UNet++ matched 0.885 [0.858, 0.908]; MedSAM 0.436 [0.338, 0.539]; Confidence 0.779 [0.704, 0.841]
+    SegFormer-B0 vs Indep. YOLO (640): dAUC +0.112  p_img 0.0040  p_cluster 0.0235  p_jk 0.0665  clusterCI [-0.008, +0.196]
+    UNet++ matched vs Indep. YOLO (640): dAUC +0.101  p_img 0.0048  p_cluster 0.0028  p_jk 0.0087  clusterCI [+0.026, +0.167]
+    UNet++ vs Indep. YOLO (640): dAUC +0.095  p_img 0.0184  p_cluster 0.0231  p_jk 0.0544  clusterCI [-0.001, +0.168]
+    Indep. YOLO (512) vs Indep. YOLO (640): dAUC +0.076  p_img 0.0439  p_cluster 0.0583  p_jk 0.1423  clusterCI [-0.013, +0.142]
+    SegFormer-B0 vs Indep. YOLO (512): dAUC +0.035  p_img 0.2778  p_cluster 0.1903  p_jk 0.2068  clusterCI [-0.028, +0.099]
+    SegFormer-B0 vs UNet++ matched: dAUC +0.011  p_img 0.6361  p_cluster 0.7720  p_jk 0.7990  clusterCI [-0.097, +0.069]
+    SegFormer-B0 vs Confidence: dAUC +0.117  p_img 0.0068  p_cluster 0.1208  p_jk 0.2229  clusterCI [-0.055, +0.239]

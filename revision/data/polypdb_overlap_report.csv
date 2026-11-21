@@ -1,0 +1,128 @@
+centre_modality,image,status,matched_reference
+BKAI/WLI,HMUH_06 200731_200716_BN005_002.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_236.jpg
+BKAI/WLI,HMUH_06 200731_200716_BN005_007.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_283.jpg
+BKAI/WLI,HMUH_06 200731_200716_BN006_003.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_86.jpg
+BKAI/WLI,HMUH_06 200731_200716_BN006_004.jpg,"possible near-duplicate (kept, flagged)",etis-larib/43.png
+BKAI/WLI,HMUH_06 200731_200716_BN007_001.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju2rzpsmtb0f0835jabkbao1.jpg
+BKAI/WLI,HMUH_06 200731_200717_BN009_019.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju2yljr0yzhw0988ecf271ly.jpg
+BKAI/WLI,HMUH_06 200731_200717_BN012_008.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju40sdwukv3k0755y99ug1k8.jpg
+BKAI/WLI,HMUH_06 200731_200717_BN014_001.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju43kj2pm34f0850l28ahpni.jpg
+BKAI/WLI,HMUH_06 200731_200717_BN014_005.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_550.jpg
+BKAI/WLI,HMUH_06 200731_200718_BN015_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_83.jpg
+BKAI/WLI,HMUH_06 200731_200718_BN015_004.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_337.jpg
+BKAI/WLI,HMUH_06 200731_200718_BN016_004.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/77.png
+BKAI/WLI,HMUH_06 200731_200718_BN016_005.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_288.jpg
+BKAI/WLI,HMUH_06 200731_200718_BN016_007.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/72.png
+BKAI/WLI,HMUH_06 200731_200718_BN016_008.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/77.png
+BKAI/WLI,HMUH_06 200731_200718_BN016_009.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/379.png
+BKAI/WLI,HMUH_06 200731_200720_BN018_001.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju7ekbo32pft0871fv7kzwb9.jpg
+BKAI/WLI,HMUH_06 200731_200720_BN018_002.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju3xtufwiv9c0818djsc4cqd.jpg
+BKAI/WLI,HMUH_06 200731_200720_BN020_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_553.jpg
+BKAI/WLI,HMUH_06 200731_200720_BN024_007.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju2nbdpmlmcj0993s1cht0dz.jpg
+BKAI/WLI,HMUH_06 200731_200720_BN030_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_288.jpg
+BKAI/WLI,HMUH_06 200731_200720_BN034_002.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_76.jpg
+BKAI/WLI,HMUH_06 200731_200721_BN036_005.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_26.jpg
+BKAI/WLI,HMUH_06 200731_200721_BN038_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_85.jpg
+BKAI/WLI,HMUH_06 200731_200721_BN041_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_131.jpg
+BKAI/WLI,HMUH_06 200731_200722_BN045_001.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/49.png
+BKAI/WLI,HMUH_06 200731_200722_BN045_002.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_26.jpg
+BKAI/WLI,HMUH_06 200731_200722_BN047_002.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_553.jpg
+BKAI/WLI,HMUH_06 200731_200722_BN047_003.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_490.jpg
+BKAI/WLI,HMUH_06 200731_200722_BN049_003.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_288.jpg
+BKAI/WLI,HMUH_06 200731_200723_BN050_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_358.jpg
+BKAI/WLI,HMUH_06 200731_200723_BN058_002.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_490.jpg
+BKAI/WLI,HMUH_06 200731_200724_BN063_007.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju7ae7bq1f820987toc8si1d.jpg
+BKAI/WLI,HMUH_06 200731_200724_BN063_008.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_550.jpg
+BKAI/WLI,HMUH_06 200731_200727_BN069_002.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_205.jpg
+BKAI/WLI,HMUH_06 200731_200728_BN073_002.jpg,"possible near-duplicate (kept, flagged)",etis-larib/43.png
+BKAI/WLI,HMUH_06 200731_200728_BN074_003.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_146.jpg
+BKAI/WLI,HMUH_06 200731_200728_BN075_003.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/369.png
+BKAI/WLI,HMUH_07 200808_200729_BN006_001.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/291.png
+BKAI/WLI,HMUH_07 200808_200729_BN008_002.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_540.jpg
+BKAI/WLI,HMUH_07 200808_200730_BN010_006.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_34.jpg
+BKAI/WLI,HMUH_07 200808_200730_BN010_008.jpg,"possible near-duplicate (kept, flagged)",etis-larib/43.png
+BKAI/WLI,HMUH_07 200808_200730_BN011_002.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/96.png
+BKAI/WLI,HMUH_07 200808_200801_BN018_002.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_85.jpg
+BKAI/WLI,HMUH_07 200808_200801_BN018_006.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/282.png
+BKAI/WLI,HMUH_07 200808_200801_BN020_002.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_345.jpg
+BKAI/WLI,HMUH_07 200808_200803_BN021_007.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/6.png
+BKAI/WLI,HMUH_07 200808_200803_BN024_003.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_345.jpg
+BKAI/WLI,HMUH_07 200808_200804_BN029_003.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_85.jpg
+BKAI/WLI,HMUH_07 200808_200804_BN030_008.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju1cbokpuiw70988j4lq1fpi.jpg
+BKAI/WLI,HMUH_07 200808_200805_BN034_005.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/95.png
+BKAI/WLI,HMUH_07 200808_200806_BN040_003.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_79.jpg
+BKAI/WLI,HMUH_07 200808_200806_BN041_004.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_93.jpg
+BKAI/WLI,HMUH_07 200808_200806_BN043_003.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_430.jpg
+BKAI/WLI,HMUH_07 200808_200806_BN044_002.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/361.png
+BKAI/WLI,HMUH_08 200822_200708_BN001_002.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_84.jpg
+BKAI/WLI,HMUH_08 200822_200801_BN003_006.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/77.png
+BKAI/WLI,HMUH_08 200822_200805_BN004_005.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_358.jpg
+BKAI/WLI,HMUH_08 200822_200807_BN006_002.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_297.jpg
+BKAI/WLI,HMUH_08 200822_200810_BN009_007.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju7dqcwi2dz00850gcmr2ert.jpg
+BKAI/WLI,HMUH_08 200822_200810_BN015_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_145.jpg
+BKAI/WLI,HMUH_08 200822_200811_BN018_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_92.jpg
+BKAI/WLI,HMUH_08 200822_200811_BN018_003.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju7ae7bq1f820987toc8si1d.jpg
+BKAI/WLI,HMUH_08 200822_200811_BN019_003.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju1gi7jlwyld0835cdf6g6qz.jpg
+BKAI/WLI,HMUH_08 200822_200811_BN020_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_370.jpg
+BKAI/WLI,HMUH_08 200822_200811_BN023_002.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/369.png
+BKAI/WLI,HMUH_08 200822_200811_BN024_004.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_124.jpg
+BKAI/WLI,HMUH_08 200822_200812_BN027_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_288.jpg
+BKAI/WLI,HMUH_08 200822_200812_BN029_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_376.jpg
+BKAI/WLI,HMUH_08 200822_200813_BN030_009.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju7awzmu1ncs0871hziy65zx.jpg
+BKAI/WLI,HMUH_08 200822_200817_BN045_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_56.jpg
+BKAI/WLI,HMUH_08 200822_200817_BN048_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_86.jpg
+BKAI/WLI,HMUH_08 200822_200817_BN048_002.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_85.jpg
+BKAI/WLI,HMUH_08 200822_200817_BN049_007.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_87.jpg
+BKAI/WLI,HMUH_08 200822_200817_BN049_009.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_553.jpg
+BKAI/WLI,HMUH_08 200822_200817_BN049_012.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju8b0jr0r2oi0801jiquetd5.jpg
+BKAI/WLI,HMUH_08 200822_200818_BN053_001.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/43.png
+BKAI/WLI,HMUH_08 200822_200818_BN053_004.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju40sdwukv3k0755y99ug1k8.jpg
+BKAI/WLI,HMUH_08 200822_200819_BN059_002.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_355.jpg
+BKAI/WLI,HMUH_08 200822_200819_BN060_003.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_85.jpg
+BKAI/WLI,HMUH_08 200822_200821_BN068_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_345.jpg
+BKAI/WLI,HMUH_08 200822_200821_BN071_006.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju7dqcwi2dz00850gcmr2ert.jpg
+BKAI/WLI,HMUH_08 200822_200822_BN072_006.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_205.jpg
+BKAI/WLI,HMUH_09 200908_200813_BN002_012.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_490.jpg
+BKAI/WLI,HMUH_09 200908_200819_BN004_006.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/72.png
+BKAI/WLI,HMUH_09 200908_200820_BN010_004.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/265.png
+BKAI/WLI,HMUH_09 200908_200820_BN012_003.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/13.png
+BKAI/WLI,HMUH_09 200908_200820_BN012_008.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_92.jpg
+BKAI/WLI,HMUH_09 200908_200820_BN012_009.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_85.jpg
+BKAI/WLI,HMUH_09 200908_200820_BN013_009.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju7dqcwi2dz00850gcmr2ert.jpg
+BKAI/WLI,HMUH_09 200908_200824_BN015_002.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju1h5w4wxajx0835mc954kxy.jpg
+BKAI/WLI,HMUH_09 200908_200824_BN015_003.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_146.jpg
+BKAI/WLI,HMUH_09 200908_200825_BN023_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_376.jpg
+BKAI/WLI,HMUH_09 200908_200826_BN027_002.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_84.jpg
+BKAI/WLI,HMUH_09 200908_200827_BN032_010.jpg,"possible near-duplicate (kept, flagged)",etis-larib/44.png
+BKAI/WLI,HMUH_09 200908_200827_BN036_003.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/227.png
+BKAI/WLI,HMUH_09 200908_200827_BN037_007.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_297.jpg
+BKAI/WLI,HMUH_09 200908_200827_BN038_005.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/96.png
+BKAI/WLI,HMUH_09 200908_200827_BN039_004.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_297.jpg
+BKAI/WLI,HMUH_09 200908_200828_BN042_001.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju5uget8krjy0818kvywd0zu.jpg
+BKAI/WLI,HMUH_09 200908_200831_BN054_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_444.jpg
+BKAI/WLI,HMUH_09 200908_200831_BN056_003.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_288.jpg
+BKAI/BLI,PKHL_15 220831_201027_BN087_011.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_444.jpg
+BKAI/BLI,PKHL_15 220831_201028_BN061_002.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_84.jpg
+BKAI/BLI,PKHL_15 220831_201031_BN073_051.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_297.jpg
+BKAI/FICE,HMUH_15 201129_201111_BN001_003.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_85.jpg
+BKAI/FICE,HMUH_15 201129_201116_BN001_001.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_490.jpg
+BKAI/FICE,HMUH_16 201207_201120_BN001_002.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju30u1hbakn808019g15nb8b.jpg
+BKAI/FICE,HMUH_16 201207_201127_BN001_001.jpg,"possible near-duplicate (kept, flagged)",etis-larib/43.png
+BKAI/LCI,PKHL_15 220831_201211_BN046_043.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/77.png
+BKAI/LCI,PKHL_15 220831_201212_BN040_052.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju88vx2uoocy075531lc63n3.jpg
+BKAI/LCI,PKHL_15 220831_201221_BN055_027.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/72.png
+BKAI/LCI,PKHL_15 220831_201221_BN061_015.jpg,"possible near-duplicate (kept, flagged)",etis-larib/43.png
+Karolinska/WLI,100H0019.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_510.jpg
+Simula/NBI,010f72b7-a411-4974-b862-9dacdb6cb6fb.jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/43.png
+Simula/NBI,0536c7fb-1aed-4dae-8f0e-e368ed4354bc.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_330.jpg
+Simula/NBI,090bbd67-4344-459d-829f-8acbd92d0471.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_192.jpg
+Simula/NBI,100H0003 (NBI).jpg,"possible near-duplicate (kept, flagged)",cvc-colonDB/88.png
+Simula/NBI,100H0004.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_92.jpg
+Simula/NBI,100H0024.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_79.jpg
+Simula/NBI,23e16b18-9589-4d7a-81e4-8fa7bf499b88.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_236.jpg
+Simula/NBI,2a299bb4-d1d2-43bd-9dab-d9056639958a.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_28.jpg
+Simula/NBI,2b3d83cb-046a-446b-bf6b-92a9358ef342.jpg,"possible near-duplicate (kept, flagged)",etis-larib/91.png
+Simula/NBI,852816d5-0756-4ef7-81d7-1ad954ccb6f6.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_43.jpg
+Simula/NBI,b521dd5f-0f41-4b3f-99f8-f49523669edc.jpg,"possible near-duplicate (kept, flagged)",kvasir/cju8ayeq7r1fb0818z1junacy.jpg
+Simula/NBI,be9e77d1-c8af-4b4f-ab04-1446034e89d8.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_343.jpg
+Simula/NBI,c1992734-c27c-4b16-9942-a98ab732cf1e.jpg,"possible near-duplicate (kept, flagged)",cvc_dataset/cvc_343.jpg
