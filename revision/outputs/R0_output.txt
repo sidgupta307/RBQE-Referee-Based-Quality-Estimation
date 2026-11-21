@@ -1,0 +1,46 @@
+
+=== Current development folder (used in this paper): C:\seg_uncertain\phase2_yolo_training
+  train:  700 images,  700 labels   (folder date 2026-06-05 02:25)
+  val  :  150 images,  150 labels   (folder date 2026-06-05 02:25)
+  test :  150 images,  150 labels   (folder date 2026-06-05 02:25)
+  overlap train/val: 0
+  overlap train/test: 0
+  overlap val/test: 0
+  file dataset.yaml (date 2026-06-05 02:25)
+    path: C:\seg_uncertain\phase2_yolo_training
+
+    train: images/train
+    val: images/val
+    test: images/test
+
+    names:
+      0: polyp
+  file split_manifest.csv (date 2026-06-05 02:25)
+    split counts: {'train': 700, 'val': 150, 'test': 150}
+  file split_statistics.csv (date 2026-06-05 02:25)
+
+=== Trained YOLO runs
+
+  C:\seg_uncertain\phase3_yolo_training\YOLO_POLYP_SEG
+    best.pt date: 2026-06-05 02:51
+    stored in best.pt: date=2026-06-05T02:51:55.687796  data=C:\seg_uncertain\phase2_yolo_training\dataset.yaml  imgsz=640  seed=42  epochs=50  best epoch=-1
+    args.yaml: data: C:\seg_uncertain\phase2_yolo_training\dataset.yaml; epochs: 50; imgsz: 640; project: C:\seg_uncertain\phase3_yolo_training; name: YOLO_POLYP_SEG; seed: 42
+    results.csv: 50 epochs logged
+
+  C:\seg_uncertain\journal_extension\T1_22_Independent_YOLO_Referee\YOLO_REFEREE_SEED123
+    best.pt date: 2026-07-16 02:39
+    stored in best.pt: date=2026-07-16T02:38:22.726954  data=C:\seg_uncertain\phase2_yolo_training\dataset.yaml  imgsz=640  seed=123  epochs=50  best epoch=-1
+    args.yaml: data: C:\seg_uncertain\phase2_yolo_training\dataset.yaml; epochs: 50; imgsz: 640; project: C:\seg_uncertain\journal_extension\T1_22_Independent_YOLO_Referee; name: YOLO_REFEREE_SEED123; seed: 123
+    results.csv: 50 epochs logged
+
+  C:\seg_uncertain\journal_extension\T1_22_Independent_YOLO_Referee\YOLO_REFEREE_SEED123_IMG512
+    best.pt date: 2026-11-21 00:01
+    stored in best.pt: date=2026-11-20T23:59:11.514793  data=C:\seg_uncertain\phase2_yolo_training\dataset.yaml  imgsz=512  seed=123  epochs=50  best epoch=-1
+    args.yaml: data: C:\seg_uncertain\phase2_yolo_training\dataset.yaml; epochs: 50; imgsz: 512; project: C:\seg_uncertain\journal_extension\T1_22_Independent_YOLO_Referee; name: YOLO_REFEREE_SEED123_IMG512; seed: 123
+    results.csv: 50 epochs logged
+
+=== Primary-model Dice on the current splits (C:\seg_uncertain\phase3_yolo_training\YOLO_POLYP_SEG\weights\best.pt)
+  train: n= 700  mean Dice 0.946  median 0.963  Dice<0.5: 7
+  val  : n= 150  mean Dice 0.884  median 0.952  Dice<0.5: 7
+  test : n= 150  mean Dice 0.888  median 0.949  Dice<0.5: 8
+  If val and test Dice are clearly lower than train Dice, the primary model did not train on them.
