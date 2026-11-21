@@ -8,7 +8,7 @@ RBQE estimates the reliability of a deployed segmentation (YOLOv8n-Seg) from its
 
 ## Data
 All datasets are public third-party datasets and are **not** redistributed here:
-Kvasir-SEG (training), CVC-ClinicDB, CVC-ColonDB, ETIS-Larib PolypDB, CVC-300 (external evaluation).
+Kvasir-SEG (training), CVC-ClinicDB, CVC-ColonDB, ETIS-Larib PolypDB, CVC-300 (external evaluation) and PolypDB (additional external evaluation).
 Download them from their original sources and set the paths at the top of each script.
 
 ## Benchmark conventions
@@ -17,7 +17,12 @@ Download them from their original sources and set the paths at the top of each s
 - Agreement descriptors are oriented so that lower agreement = higher failure risk (Centroid Distance: higher = higher risk).
 - Boundary Agreement = Dice between one-pixel boundary rings (mask XOR single-iteration binary erosion).
 
+## Revision analyses
+All analyses added during the major revision (primary-model confidence baseline, sequence-level statistics, protocol-matched and resolution-matched referees, PolypDB external validation, operating points and triage) are in [`revision/`](revision/README.md), with their scripts, derived data and outputs.
+
 ## Reproducing the reported results
+Table and figure numbers in this section refer to the original submission; for the revised manuscript see [`revision/README.md`](revision/README.md).
+
 
 | Paper item | Result | Script |
 |---|---|---|
@@ -55,7 +60,7 @@ python scripts/analysis/paired_delong_and_restricted.py sample_results
 ## Notes
 - Scripts contain absolute Windows paths at the top of each file; edit them to match your local data and output folders.
 - UNet++ referee training: `scripts/unetpp/Unet_plus_plus.ipynb`, cells 3-6 (ResNet34, Adam 1e-4, batch 8, 25 epochs, 256x256; saves `best_unetplusplus_model.pth`). Later cells in that notebook are unrelated experiments.
-- Evaluation is retrospective. Image-level bootstrap and DeLong tests do not model within-sequence correlation between frames.
+- Evaluation is retrospective. Sequence-level (clustered) analyses that account for correlated frames are in `revision/R4_sequence_level_analysis.py`.
 
 ## Licence and citation
 Please cite the paper above if you use this code.
