@@ -1,0 +1,22 @@
+(CIoU) C:\seg_uncertain>conda activate CIoU
+
+(CIoU) C:\seg_uncertain>cd C:\seg_uncertain
+
+(CIoU) C:\seg_uncertain>python R11_benchmark_near_duplicates.py
+Benchmark images: 1223; near-duplicate pairs (Hamming <= 4): 1068; groups with >1 image: 163; images removed: 444 (of which CVC-300: 8)
+
+Reduced benchmark, full: n = 779, failures = 176
+  SegFormer-B0      ROC-AUC 0.960
+  Independent YOLO  ROC-AUC 0.920
+  Confidence        ROC-AUC 0.941
+  SegFormer-B0 vs Independent YOLO: dAUC +0.040  paired DeLong p 0.0003
+  SegFormer-B0 vs Confidence: dAUC +0.019  paired DeLong p 0.0979
+
+Reduced benchmark, non-empty primary: n = 651, failures = 48
+  SegFormer-B0      ROC-AUC 0.889
+  Independent YOLO  ROC-AUC 0.792
+  Confidence        ROC-AUC 0.785
+  SegFormer-B0 vs Independent YOLO: dAUC +0.097  paired DeLong p 0.0046
+  SegFormer-B0 vs Confidence: dAUC +0.104  paired DeLong p 0.0048
+
+(CIoU) C:\seg_uncertain>
