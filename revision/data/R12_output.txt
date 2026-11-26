@@ -1,0 +1,25 @@
+Table S12, benchmark (1,223 images; non-empty primary 1,046; 59 failures)
+  Independent YOLO 640   mean DSC full 0.723 non-empty 0.811  empty referee masks  71  shared failures 44/59  Spearman rho 0.86
+  Independent YOLO 512   mean DSC full 0.753 non-empty 0.834  empty referee masks  29  shared failures 37/59  Spearman rho 0.82
+  SegFormer-B0           mean DSC full 0.751 non-empty 0.803  empty referee masks  15  shared failures 30/59  Spearman rho 0.64
+  UNet++ original        mean DSC full 0.642 non-empty 0.707  empty referee masks  47  shared failures 27/59  Spearman rho 0.47
+  UNet++ matched         mean DSC full 0.659 non-empty 0.738  empty referee masks 113  shared failures 26/59  Spearman rho 0.63
+
+Table S12, PolypDB shared failures (49 non-empty primary failures)
+  yolo       38/49
+  yolo512    36/49
+  segformer  26/49
+  unetpp     27/49
+  unetpp_m   31/49
+
+Table S20, failures among the 60% of images with the highest agreement
+  benchmark SegFormer-B0     accepted 734 images, failures 7.0
+  benchmark UNet++ matched   accepted 734 images, failures 3.0
+  benchmark UNet++ original  accepted 734 images, failures 5.0
+  benchmark YOLO 512         accepted 734 images, failures 13.0
+  benchmark YOLO 640         accepted 734 images, failures 18.0
+  PolypDB   SegFormer-B0     accepted 738 images, failures 5.0
+  PolypDB   UNet++ matched   accepted 738 images, failures 4.0
+  PolypDB   UNet++ original  accepted 738 images, failures 4.0
+  PolypDB   YOLO 512         accepted 738 images, failures 10.0
+  PolypDB   YOLO 640         accepted 738 images, failures 10.0
